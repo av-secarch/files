@@ -1,4 +1,11 @@
-apt update
+pipeline {
+    agent any
 
-mkdir testfolder
-
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
